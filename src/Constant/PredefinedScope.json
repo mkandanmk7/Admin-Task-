@@ -1,0 +1,33 @@
+{
+  "admin": {
+    "name": "Admin",
+    "resources": {
+      "automation": {
+        "id": "automation",
+        "scopes": ["*"]
+      },
+      "referral": {
+        "id": "referral",
+        "scopes": ["*"]
+      }
+    }
+  },
+
+  "content_manager": {
+    "name": "Content Manager",
+    "resources": {
+      "automation": {
+        "id": "automation",
+        "scopes": [
+          "automation_read",
+          "automation_email_read",
+          "referral_publish_write"
+        ]
+      },
+      "referral": {
+        "id": "referral",
+        "scopes": ["referral_read", "referral_email_read"]
+      }
+    }
+  }
+}

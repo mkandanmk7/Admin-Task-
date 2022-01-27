@@ -1,0 +1,90 @@
+{
+  "automation": {
+    "name": "Automation",
+    "id": "automation",
+    "scopes": [
+      {
+        "value": "read",
+        "id": "automation_read",
+        "category": "automation",
+        "label": "read",
+        "type": "parent"
+      },
+      {
+        "value": "write",
+        "category": "automation",
+        "id": "automation_write",
+        "label": "write",
+        "type": "parent"
+      },
+      {
+        "value": "write",
+        "category": "automation_publish",
+        "id": "automation_publish_write",
+        "label": "publish: write",
+        "type": "child",
+        "suffix": "publish"
+      },
+      {
+        "value": "read",
+        "category": "automation_email",
+        "id": "automation_email_read",
+        "label": "email_template: read",
+        "type": "child",
+        "suffix": "email"
+      },
+      {
+        "value": "write",
+        "category": "automation_email",
+        "id": "automation_email_write",
+        "label": "email_template: write",
+        "type": "child",
+        "suffix": "email"
+      }
+    ]
+  },
+  "referral": {
+    "name": "Referral",
+    "id": "referral",
+    "scopes": [
+      {
+        "value": "read",
+        "id": "referral_read",
+        "category": "referral",
+        "label": "read",
+        "type": "parent"
+      },
+      {
+        "value": "write",
+        "category": "referral",
+        "id": "referral_write",
+        "label": "write",
+        "type": "parent"
+      },
+      {
+        "value": "write",
+        "category": "referral_publish",
+        "id": "referral_publish_write",
+        "label": "publish: write",
+        "type": "child",
+        "suffix": "publish"
+      },
+      {
+        "value": "read",
+        "category": "referral_email",
+        "id": "referral_email_read",
+        "label": "email_template: read",
+        "type": "child",
+        "suffix": "email"
+      },
+      {
+        "value": "write",
+        "category": "referral_email",
+        "id": "referral_email_write",
+        "label": "email_template: write",
+        "type": "child",
+        "suffix": "email"
+      }
+    ]
+  }
+}
